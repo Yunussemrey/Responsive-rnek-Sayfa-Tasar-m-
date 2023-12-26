@@ -1,0 +1,361 @@
+* {
+
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.row {
+    border-style: none;
+    border-width: 2px;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    border-color: black;
+
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+    border-style: none;
+    border-width: 2px;
+    border-color: yellow;
+
+
+}
+
+
+@media screen and (max-width:768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+
+}
+
+#yan {
+    background-color: salmon;
+
+
+}
+
+#foto {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    border-style: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 6px 4px 3px brown;
+
+}
+
+#baslık1 {
+    text-align: center;
+    position: relative;
+    top: 85px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 50px;
+    color: white;
+    text-shadow: 5px 6px 5px brown;
+}
+
+#divbas {
+    background-color: cadetblue;
+}
+
+@media screen and (max-width:768px) {
+    #foto {
+        width: 50%;
+        position: relative;
+        left: 130px;
+    }
+
+    #baslık1 {
+        position: relative;
+        top: 0px;
+    }
+
+    #liste {
+        width: 10%;
+
+    }
+
+    #sonlist {
+        width: 10%;
+
+    }
+    #misyaz{
+    width: 90%;
+    margin: 25px;
+       
+    }
+
+}
+
+#liste {
+    list-style-type: none;
+    margin: 10px;
+
+
+}
+
+#liste li {
+    position: relative;
+    float: left;
+    left: 330px;
+    width: 10%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: burlywood;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 5px 3px 4px burlywood;
+}
+
+#nav {
+    background-color: darkgrey;
+
+}
+
+#ip {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+
+}
+
+#ih1 {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+#tarihfoto {
+    border-style: none;
+    border-radius: 10px;
+    padding: 5px;
+    width: 50%;
+    object-fit: fill;
+    position: relative;
+    float: left;
+    top: 10px;
+    right: 3px;
+
+}
+
+#ip1 {
+    position: relative;
+    float: right;
+    text-align: justify;
+    width: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+
+}
+
+#yanlist {
+    margin: 10px;
+    list-style-type: none;
+
+}
+
+#yanlist li {
+    margin: 50px;
+    border-style: solid;
+    padding: 10px;
+    width: 70%;
+    position: relative;
+    left: -50px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: chartreuse;
+    border-color: chartreuse;
+
+
+}
+
+#yanlist figcaption {
+    border-style: none;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    border-radius: 10px;
+    background-color: darkcyan;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-style: italic;
+
+}
+
+#sonlist {
+    margin: 10px;
+    list-style-type: none;
+}
+
+#sonlist li {
+    position: relative;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    width: 20%;
+    left: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+
+}
+
+#icerik {
+    background-color: gainsboro;
+    height: 780px;
+}
+
+#son {
+    background-color: bisque;
+}
+
+#konubaslık {
+    text-align: center;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+#derslist {
+    margin: 20px;
+    padding: 10px;
+}
+
+.ders {
+    margin: 34.6px;
+    width: 50%;
+}
+
+#harita {
+    position: relative;
+    float: right;
+    bottom: 500px;
+    border: none black 2px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+#hakkında {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+#vesika {
+    position: relative;
+    float: right;
+    border-style: none;
+    border-radius: 10px;
+    width: 30%;
+}
+
+#bilist {
+    margin: 10px;
+    padding: 10px;
+}
+
+.bilgiler {
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    top: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+
+}
+#misyaz{
+   border-style: solid;
+   border-radius: 10px;
+   border-color: gray;
+   position: relative;
+   top: 25px; 
+   float: right;
+   background-color: white;
+}
+#misbas{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-variant: small-caps;
+    text-decoration: underline;
+    font-size: 40px;
+    color: crimson;
+}
+.misp{
+    font-family: cursive;
+    font-size: 19px;
+    
+}
